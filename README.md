@@ -4,9 +4,17 @@ Only tested on MacOS with Docker running in VirtualBox. For native docker instal
 
 ##### Pre-requisites
 
+```
 docker
 git
-jq
+jq - https://stedolan.github.io/jq/
+```
+
+##### Clone this repo
+
+```
+git clone git@github.com:nauman-leghari-wipro/sonar-code-checker.git
+```
 
 ##### Build docker image for sonar-runner
 
@@ -35,7 +43,7 @@ eg.
 ./run-sonar.sh git@github.com:namuan/site-crawler.git
 ```
 
-#### Open SonarQube
+##### Open SonarQube
 
 ```
 SONARQUBE_PORT=$(docker inspect sonarqube | jq -r '.[].NetworkSettings.Ports["9000/tcp"][0].HostPort')
