@@ -16,6 +16,8 @@ jq - https://stedolan.github.io/jq/
 git clone git@github.com:nauman-leghari-wipro/sonar-code-checker.git
 ```
 
+[![asciicast](https://asciinema.org/a/104482.png)](https://asciinema.org/a/104482)
+
 ##### Build docker image for sonar-runner
 
 ```
